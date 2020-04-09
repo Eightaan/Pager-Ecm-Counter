@@ -47,7 +47,7 @@ if string.lower(RequiredScript) == "lib/managers/hudmanagerpd2" then
         local pager_icon = self._pager_panel:bitmap({
             name = "pager_icon",
             texture = "guis/textures/pd2/specialization/icons_atlas",
-		    texture_rect = { 1 * 64, 4 * 64, 80, 64 },
+		    texture_rect = { 1 * 64, 4 * 64, 76, 64 },
 		    valign = "top",
 		    layer = 1,
             w = 38,
