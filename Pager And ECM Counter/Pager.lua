@@ -25,8 +25,8 @@ if string.lower(RequiredScript) == "lib/managers/hudmanagerpd2" then
 		    h = 200
         })
 	
-	    self._pager_panel:set_top(70)
-        self._pager_panel:set_right(self._hud_panel:w() - 30)
+	    self._pager_panel:set_top(60)
+        self._pager_panel:set_right(self._hud_panel:w() + 11)
 
         local pager_box = HUDBGBox_create(self._pager_panel,{ w = 38, h = 38, }, {})
 	
@@ -47,7 +47,7 @@ if string.lower(RequiredScript) == "lib/managers/hudmanagerpd2" then
         local pager_icon = self._pager_panel:bitmap({
             name = "pager_icon",
             texture = "guis/textures/pd2/specialization/icons_atlas",
-            texture_rect = {66,254,64,64},
+		    texture_rect = { 1 * 64, 4 * 64, 80, 64 },
 		    valign = "top",
 		    layer = 1,
             w = 38,
@@ -76,7 +76,7 @@ if string.lower(RequiredScript) == "lib/managers/hudmanagerpd2" then
 
     function HUDManager:_setup_player_info_hud_pd2(...)
 	    _setup_player_info_hud_pd2_original(self, ...)
-	    self._hud_pager_counter = HUDPAGERCounter:new(managers.hud:script(PlayerBase.PLAYER_INFO_HUD_FULLSCREEN_PD2))
+	    self._hud_pager_counter = HUDPAGERCounter:new(managers.hud:script(PlayerBase.PLAYER_INFO_HUD_PD2))
     end
 
     function HUDManager:add_pager()
