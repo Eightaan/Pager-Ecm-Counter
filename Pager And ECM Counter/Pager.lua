@@ -25,7 +25,7 @@ if string.lower(RequiredScript) == "lib/managers/hudmanagerpd2" then
 		    h = 200
         })
 	
-	    self._pager_panel:set_top(60)
+	    self._pager_panel:set_top(50)
         self._pager_panel:set_right(self._hud_panel:w() + 11)
 
         local pager_box = HUDBGBox_create(self._pager_panel,{ w = 38, h = 38, }, {})
