@@ -24,7 +24,7 @@ if string.lower(RequiredScript) == "lib/managers/hudmanagerpd2" then
 		    h = 200
 	    })
 	
-	    self._ecm_panel:set_top(95)
+	    self._ecm_panel:set_top(100)
         self._ecm_panel:set_right(self._hud_panel:w() + 11)
 		
 	    local ecm_box = HUDBGBox_create(self._ecm_panel, { w = 38, h = 38, },  {})
